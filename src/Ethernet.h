@@ -89,6 +89,7 @@ public:
   // data and issue IP events to the sketch.  It does not return until all IP
   // events have been processed. Renews dhcp-lease if required.
   int maintain();
+  void dhcpOff(void);
 
   EthernetLinkStatus linkStatus();
   EthernetHardwareStatus hardwareStatus();

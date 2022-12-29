@@ -76,6 +76,12 @@ UIPEthernetClass::begin(const uint8_t* mac, unsigned long timeout, unsigned long
 #endif
 
 void
+UIPEthernetClass::dhcpOff(void)
+{
+  _dhcp = NULL;
+}
+
+void
 UIPEthernetClass::begin(const uint8_t* mac, IPAddress ip)
 {
   IPAddress dns = ip;
